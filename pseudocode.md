@@ -12,20 +12,21 @@
         - Hours
             - 12 unit hours
                 - Starts at 1 and goes to 12
-                - **incriments** every time the minute resets to 1
+                - **incriments** every time the minute resets to 0
 
             - 24 unit hours
                 - starts at 00 and goes until 24
-                - **incriments** every time minute resets to 1
+                - **incriments** every time minute resets to 0
         - Minutes
             - 60 Units
-                - Starts at 1 and **Incriments** every time the Seconds timer restarts at 1.
-                - When minutes gets to 59, it resets back to 1 after seconds **restarts** to 1 again.
+                - Starts at 00 and **Incriments** every time the Seconds timer restarts at 00.
+                - When minutes gets to 59, it resets back to 00 after seconds **restarts** to 00 again.
         - Seconds
             -60 units
-                - Starts at 1 and **Incriments** 1 each time until it reaches 59. Then starts back to 1.
+                - Starts at 00 and **Incriments** each time until it reaches 59.
+                - resets back to 00.
     - Alarm
         - Alarm time
             - 
-        - Display an alert when Alarm time is met
+        - Alarm Action
 
