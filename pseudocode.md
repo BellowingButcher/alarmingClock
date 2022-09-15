@@ -25,8 +25,20 @@
             -60 units
                 - Starts at 00 and **Incriments** each time until it reaches 59.
                 - resets back to 00.
+        - A.M or P.M
+            - Displays only when 12 hour format is chosen
+            - A.M. is the first half of the day
+            - P.M. is the second half of the day
     - Alarm
         - Alarm time
-            - 
+            - Adjustable Hours
+            - Adjustable Minutes
+            - Adjustable Seconds
+            - Adjustable A.m. or P.m.
+            
         - Alarm Action
+         - Takes set alarm time and compares it to the real time.
+         - When the set alram time is equal to the real time, activate the alarm
+
+
 
