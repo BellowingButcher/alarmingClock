@@ -20,7 +20,7 @@ const secs = document.getElementById('alarmSecond');
 function setAlarm() {
 
     let alarmTime = hrs + mins + secs;
-    let currentTime = document.getElementById('hours') + document.getElementById('minutes') + document.getElementById('seconds');
+    let currentTime = Date.now;
 
     if ((alarmTime - currentTime) === 0) {
         alert("Alarming, isn't it?");
