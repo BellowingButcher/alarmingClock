@@ -18,7 +18,7 @@ const secs = document.getElementById('alarmSecond');
 
 
 function setAlarm() {
-
+// alarmTime needs to be the values of the inputed options from the drop down menus on the page
     let alarmTime = hrs + mins + secs;
     let currentTime = Date.now;
 
