@@ -12,3 +12,8 @@ body, .wrapper{
     align-items: center;
     justify-content: center;
 }
+
+body{
+    background-color: darkgreen
+    ;
+}
