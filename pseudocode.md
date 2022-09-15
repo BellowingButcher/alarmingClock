@@ -33,15 +33,15 @@
         - Alarm time
             - Ive got one of two ideas for this
                 - One being
-                    - Adjustable Hours
-                    - Adjustable Minutes
-                    - Adjustable Seconds
-                    - Adjustable A.m. or P.m.
+                    - User input number Hours
+                    - User input number Minutes
+                    - User input number Seconds
+                    - User input number A.m. or P.m.
                 - Two being
-                    - A button for every hour
-                    - A button for every minute
-                    - A button for every second
-                    - A button for AM or PM
+                    - User select button button for every hour
+                    - User select button button for every minute
+                    - User select button button for every second
+                    - User select button button for AM or PM
 
         - Alarm Action
          - Takes set alarm time and compares it to the real time.
