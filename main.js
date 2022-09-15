@@ -10,4 +10,18 @@ function displayTime(){
     document.getElementById('seconds').innerHTML = sec;
 
 }
-setInterval(displayTime, 10);
+setInterval(displayTime, 1000);
+
+const setAlarmBtn = document.getElementById('setAlarmBtn');
+const hrs = document.getElementById('alarmHour');
+const mins = document.getElementById('alarmMinute');
+const secs = document.getElementById('alarmSecond');
+
+
+function setAlarm() {
+
+    let alarmTime = hrs + mins + secs;
+console.log(alarmTime)
+}
+
+setAlarmBtn.addEventListener('click', setAlarm);

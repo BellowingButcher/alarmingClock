@@ -11,7 +11,7 @@
         <!--This element will display the current time-->
             <div class = 'wrapper'>
                 <h1>The Alarming Clock</h1>                
-                <h3>
+                <h3 id="clockDisplay">
                     <span id="hours">04</span>
                     :
                     <span id="minutes">20</span>
@@ -23,7 +23,7 @@
 
                     <div>
 
-                        <select>
+                        <select id="alarmHour">
                             <option value="Hour" selected hidden>Hour</option>
                             <option value="00">00</option>
                             <option value="01">01</option>
@@ -52,7 +52,7 @@
 
                         </select>
 
-                        <select>
+                        <select id="alarmMinute">
                             <option value="Minute" selected hidden>Minute</option>
                             <option value="00">00</option>
                             <option value="01">01</option>
@@ -67,7 +67,7 @@
                             <option value="10">10</option>
                         </select>
                         
-                        <select>
+                        <select id="alarmSecond">
                             <option value="Second" selected hidden>Second</option>
                             <option value="00">00</option>
                             <option value="01">01</option>
@@ -82,16 +82,10 @@
                             <option value="10">10</option>
 
                         </select>
-
-                        <select>
-                            <option value="AM">AM</option>
-                            <option value="PM">PM</option>
-                        </select>
-
                     </div>
 
                 </div>
-                        <button>Set Alarm</button>
+                        <button id="setAlarmBtn">Set Alarm</button>
 
             </div>
         <script src="main.js"></script>
