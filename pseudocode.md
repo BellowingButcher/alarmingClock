@@ -31,14 +31,33 @@
             - P.M. is the second half of the day
     - Alarm
         - Alarm time
-            - Adjustable Hours
-            - Adjustable Minutes
-            - Adjustable Seconds
-            - Adjustable A.m. or P.m.
-            
+            - Ive got one of two ideas for this
+                - One being
+                    - Adjustable Hours
+                    - Adjustable Minutes
+                    - Adjustable Seconds
+                    - Adjustable A.m. or P.m.
+                - Two being
+                    - A button for every hour
+                    - A button for every minute
+                    - A button for every second
+                    - A button for AM or PM
+
         - Alarm Action
          - Takes set alarm time and compares it to the real time.
          - When the set alram time is equal to the real time, activate the alarm
 
+- Funtionality
+    - Start(Plug in the device)
+    - The display checks a database for current time
+    - Displays current time in a *hour*, *minute*, *second*, and *AM or PM* 
+    - Checks to see if there is an alarm set
+        - If there is an alarm
+            - get alarm time
+            - When the difference between the alarm time and the current time is equal to zero
+                - Give an alert signal that the alarm time has arrived
+        - If there is no alarm
+            - wait for a click from the save alarm button
+        
 
 
