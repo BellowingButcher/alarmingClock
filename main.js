@@ -3,14 +3,13 @@ function displayTime(){
     let hrs = dateTime.getHours();
     let min = dateTime.getMinutes();
     let sec = dateTime.getSeconds();
-    const amPM = document.getElementById('session');
 
     document.getElementById('hours').innerHTML = hrs;
     document.getElementById('minutes').innerHTML = min;
     document.getElementById('seconds').innerHTML = sec;
 
 }
-setInterval(displayTime, 1000);
+setInterval(displayTime, 10);
 
 const setAlarmBtn = document.getElementById('setAlarmBtn');
 const hrs = document.getElementById('alarmHour');
@@ -21,7 +20,12 @@ const secs = document.getElementById('alarmSecond');
 function setAlarm() {
 
     let alarmTime = hrs + mins + secs;
-console.log(alarmTime)
+    let currentTime = document.getElementById('hours') + document.getElementById('minutes') + document.getElementById('seconds');
+
+    if ((alarmTime - currentTime) === 0) {
+        alert("Alarming, isn't it?");
+    }
+
 }
 
 setAlarmBtn.addEventListener('click', setAlarm);
