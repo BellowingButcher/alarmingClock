@@ -12,9 +12,10 @@ function displayTime(){
 setInterval(displayTime, 10);
 
 const setAlarmBtn = document.getElementById('setAlarmBtn');
-const hrs = document.getElementById('alarmHour').innerHTML;
+/*const hrs = document.getElementById('alarmHour').innerHTML;
 const mins = document.getElementById('alarmMinute').innerHTML;
-const secs = document.getElementById('alarmSecond').innerHTML;
+const secs = document.getElementById('alarmSecond').innerHTML;*/
+const hrs = document.querySelector('alarmHour').innerHTML;
 
 
 
