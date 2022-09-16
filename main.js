@@ -19,7 +19,7 @@ const secs = document.querySelector('#alarmSecond');
 
 
 function setAlarm() {
-
+console.log(hrs)
 // alarmTime needs to be the values of the inputed options from the drop down menus on the page
     let alarmTime = hrs + mins + secs;
     let currentTime = Date.now;
@@ -31,3 +31,6 @@ function setAlarm() {
 }
 
 setAlarmBtn.addEventListener('click', setAlarm);
+hrs.addEventListener('change', () => {
+    
+})
