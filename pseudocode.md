@@ -1,32 +1,97 @@
-# I want to make an alarming clock!
+#PseudoCode
 
-- I need this clock to
-    - Display current time in a [digital format](https://raw.githubusercontent.com/bootcamp-students/Resources/master/images/wireframes/digital-clock.png).
-        - It should count up, **incrementing** the seconds.
-    - It should have a time for an alarm to go off (can use a variable if wanted)
-        - The alarm should **start**(display an alert window) when the difference between the current time and the time on the alarm is 0
-    - The clock should update every second without refreshing the page
+What my code should look like in human words
 
-- Parts of the clock
-    - Display
-        - Hours
-            - 12 unit hours
-                - Starts at 1 and goes to 12
-                - **incriments** every time the minute resets to 0
+- HTML page
 
-            - 24 unit hours
-                - starts at 00 and goes until 24
-                - **incriments** every time minute resets to 0
-        - Minutes
-            - 60 Units
-                - Starts at 00 and **Incriments** every time the Seconds timer restarts at 00.
-                - When minutes gets to 59, it resets back to 00 after seconds **restarts** to 00 again.
-        - Seconds
-            -60 units
-                - Starts at 00 and **Incriments** each time until it reaches 59.
-                - resets back to 00.
-    - Alarm
-        - Alarm time
-            - 
-        - Alarm Action
+    - Container for element id clockDisplay
 
+        - Size 3 Header "The Alarming Clock" 
+            - Span element
+                - (displayHour)Hours
+            - :
+            
+            - Span element
+                - (displayMinute)Minutes
+
+            - :
+
+            - Span element
+                - (displaySecond)Seconds
+
+    - Container for element id alarmField
+
+        - Size 3 Header "Set your alarm here"
+
+            - selector element, id alarmHour (drop down box for "hours" of day)
+                -options
+                    - 00
+                    - 01
+                    - 02
+                    - ...
+                    - 23
+
+            - selector element, id alarmMinute (drop down box for "minutes" of the hour)
+                - options
+                    - 00
+                    - 01
+                    - 02
+                    - ...
+                    - 59
+            - selector element, id alarmSecond (drop down box for "seconds" of the minute)
+                - options
+                    - 00
+                    - 01
+                    - 02
+                    - ...
+                    - 59
+            - (alarmBtn) Button for setting your alarm
+
+- Javascript page
+        - Function timeNow
+            - displayTime is a snapshot of the time right now 
+                - get the hour of displayTime
+                    - let this equal displayHour
+
+                - get the minute of displayTime
+                    - let this equal displayMinute
+
+                - get the second of displayTime 
+                    - let this equal displaySecond
+
+    - timeNow needs to run at an interval of every 10 microseconds
+
+        - Function setAlarm
+
+            - let alarmHourTest = false
+            - let alarmMinuteTest = false
+            - let alarmSecondTest = false
+
+            - alarmHour.addEventListener ('click', () => set alarmHourTest to true)
+            - alarmMinute.addEventListener ('click', () => set alarmMinuteTest to true)
+            - alarmSecond.addEventListener ('click', () => set alarmSecondTest to true)
+
+                - If (alarmHour or alarmMinute or alarmSecond) equal false
+                    - Alert! Choose every part of the time to set your alarm!
+
+                - If (alarmHour and alarmMinute and alarmSecond) equal true
+                    - add them together
+                    - let alarmSetTime be equal to  this
+                - end If
+
+                - let displayTime equal
+                    - the numerical values of *displayHour*, *displayMinute*, and *displaySecond* all added together.
+
+                - let timeDifference equal
+                    - alarmSetTime - displayTime
+
+                - if timeDifference is equal to 0
+                    - Alert! It's alarming isn't it?
+                - end of if
+    - click button to start setAlarm function
+        - alarmBtn.addEventListener('click', setAlarm)
+        
+    
+
+
+- CSS page
