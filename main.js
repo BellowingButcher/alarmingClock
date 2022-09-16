@@ -53,3 +53,5 @@ function setAlarm() {
 
 return
 }
+
+document.getElementById('alarmBtn').addEventListener('click', setAlarm);
