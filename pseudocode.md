@@ -30,37 +30,46 @@ What my code should look like in human words
         - (alarmBtn) Button for setting your alarm
 
 - Javascript page
-    - Function timeNow
-        - displayTime is a snapshot of the time right now 
-            - get the hour of displayTime
-                - let this equal displayHour
+        - Function timeNow
+            - displayTime is a snapshot of the time right now 
+                - get the hour of displayTime
+                    - let this equal displayHour
 
-            - get the minute of displayTime
-                - let this equal displayMinute
+                - get the minute of displayTime
+                    - let this equal displayMinute
 
-            - get the second of displayTime 
-                - let this equal displaySecond
+                - get the second of displayTime 
+                    - let this equal displaySecond
 
     - timeNow needs to run at an interval of every 10 microseconds
 
-    - Function setAlarm
-        - If any of the options in alarmField are not chosen
-            - Alert! Choose every part of the time to set your alarm!
+        - Function setAlarm
 
-        - If all of the options have been choosen
-            - add them together
-            - let alarmSetTime be equal to  this
-        - end of if
+            - let alarmHourTest = false
+            - let alarmMinuteTest = false
+            - let alarmSecondTest = false
 
-        - let displayTime be equal to
-            - the numerical values of *displayHour*, *displayMinute*, and *displaySecond* all added together.
+            - alarmHour.addEventListener ('click', () => set alarmHourTest to true)
+            - alarmMinute.addEventListener ('click', () => set alarmMinuteTest to true)
+            - alarmSecond.addEventListener ('click', () => set alarmSecondTest to true)
 
-        - let timeDifference be equal to
-            - alarmSetTime - displayTime
+                - If (alarmHour or alarmMinute or alarmSecond) are false
+                    - Alert! Choose every part of the time to set your alarm!
 
-        - if timeDifference is equal to 0
-            - Alert! It's alarming isn't it?
-        - end of if
+                - If (alarmHour and alarmMinute and alarmSecond) are true
+                    - add them together
+                    - let alarmSetTime be equal to  this
+                - end If
+
+                - let displayTime equal
+                    - the numerical values of *displayHour*, *displayMinute*, and *displaySecond* all added together.
+
+                - let timeDifference equal
+                    - alarmSetTime - displayTime
+
+                - if timeDifference is equal to 0
+                    - Alert! It's alarming isn't it?
+                - end of if
     - click button to start setAlarm function
         
     
