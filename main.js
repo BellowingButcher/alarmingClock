@@ -4,9 +4,9 @@ function timeNow(){
     let displayMin = displayTime.getMinutes();
     let displaySec = displayTime.getSeconds();
 
-displayHr = document.getElementById('displayHour').innerHTML;
-displayMin = document.getElementById('displayMinute').innerHTML;
-displaySec = document.getElementById('displaySecond').innerHTML;
+document.getElementById('displayHour').innerHTML = displayHr;
+document.getElementById('displayMinute').innerHTML = displayMin;
+document.getElementById('displaySecond').innerHTML = displaySec;
 
 }
-setInterval (timeNow, 100);
+setInterval (timeNow, 10);
