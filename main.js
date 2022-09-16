@@ -9,3 +9,4 @@ displayMinute = document.getElementById('displayMinute').innerHTML;
 displaySecond = document.getElementById('displaySecond').innerHTML;
 
 }
+setInterval (timeNow, 100);
