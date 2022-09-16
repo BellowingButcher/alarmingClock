@@ -47,7 +47,7 @@ function setAlarm() {
 
     const currentTime = displayTimeTestHr + displayTimeTestMin + displayTimeTestSec;
 
-    If (alarmHourTest - displayTimeTest === 0) {
+    If (alarmSetTime - currentTime === 0) {
         alert('It"s alarming, isn"t it?');
     }
 
