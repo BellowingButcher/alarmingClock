@@ -44,9 +44,14 @@ What my code should look like in human words
     - timeNow needs to run at an interval of every 10 microseconds
 
     - Function setAlarm
-        - let alarmSetTime be equal to
-            - the numerical values of *alarmHour*, *alarmMinute*, and *alarmSecond* all added together.
-        
+        - If any of the options in alarmField are not chosen
+            - Alert! Choose every part of the time to set your alarm!
+
+        - If all of the options have been choosen
+            - add them together
+            - let alarmSetTime be equal to  this
+        - end of if
+
         - let displayTime be equal to
             - the numerical values of *displayHour*, *displayMinute*, and *displaySecond* all added together.
 
@@ -55,6 +60,8 @@ What my code should look like in human words
 
         - if timeDifference is equal to 0
             - Alert! It's alarming isn't it?
+        - end of if
+    - click button to start setAlarm function
         
     
 
